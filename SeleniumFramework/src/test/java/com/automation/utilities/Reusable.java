@@ -17,7 +17,7 @@ public class Reusable {
 	public static String captureScreenshot(WebDriver driver) {
 		
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String Screenshotpath = System.getProperty("user.dir")+"/Screenshot/"+ getCurrentDateTime() +".png";
+		String Screenshotpath = System.getProperty("user.dir")+"\\Screenshot\\"+ getCurrentDateTime() +".png";
 		try {
 			
 			FileHandler.copy(src, new File(""));
