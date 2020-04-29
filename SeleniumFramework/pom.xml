@@ -60,12 +60,13 @@
         <source>9.0.1</source>
         <target>9.0.1</target>
           <suiteXmlFiles>
-            <suiteXmlFile>XMLFiles/testng.xml</suiteXmlFile>
+            <suiteXmlFile>XMLFiles/${xmlFiles}</suiteXmlFile>
           </suiteXmlFiles>
           
           <systemPropertyVariables>
           
           	<browser>${BrowserCall}</browser>
+          	<URL>${AppURL}</URL>
           
           </systemPropertyVariables>
         

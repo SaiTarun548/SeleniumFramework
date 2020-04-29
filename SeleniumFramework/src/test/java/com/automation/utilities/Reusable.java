@@ -20,7 +20,7 @@ public class Reusable {
 		String Screenshotpath = System.getProperty("user.dir")+"\\Screenshots\\"+ getCurrentDateTime() +".png";
 		try {
 			
-			FileHandler.copy(src, new File(""));
+			FileHandler.copy(src, new File(Screenshotpath));
 			System.out.println("Screenshot Captured");
 		
 		} catch (IOException e) {
