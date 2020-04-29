@@ -67,8 +67,8 @@
           
           	<browser>${BrowserCall}</browser>
           
-          
           </systemPropertyVariables>
+        
         </configuration>
       </plugin>
 </plugins>
