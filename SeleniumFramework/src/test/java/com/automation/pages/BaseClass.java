@@ -37,10 +37,13 @@ public class BaseClass {
 		report.attachReporter(extent);
 	}
 	
+	@Parameters("BrowserCall")
 	@BeforeClass
-	public void setup() {
+	public void setup(String browser) {
 		
-		driver = BrowserCall.startApplication(driver, config.getBrowser(), config.getURL());
+	//	driver = BrowserCall.startApplication(driver, config.getBrowser(), config.getURL());
+		
+		driver = BrowserCall.startApplication(driver, browser, config.getURL());
 	}
 	
 	
